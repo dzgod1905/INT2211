@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ricon</title>
+
+    <script src="js/app2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/binance.js"></script>
+    <!-- <meta http-equiv="refresh" content="6"> -->
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/app2.css" />
+  </head>
+
+  <script src="js/app2.js"></script>
+
+  <body>
+    <aside class="dashboard">
+      <div class="board" id="info-board">
+        <div>
+          <a>Hello</a>
+          <p id="name">dzgod1905</p>
+        </div>
+        <div>
+          <a>Capital: </a>
+          <p id="fund">$100</p>
+        </div>
+        <div>
+          <a>Value: </a>
+          <p id="value">$100</p>
+        </div>
+        <div>
+          <a>Profit: </a>
+          <p id="profit">0%</p>
+        </div>
+        <div>
+          <a>Remaining: </a>
+          <p id="remaining">$100</p>
+        </div>
+      </div>
+    </aside>
+    <section class="navbar">
+      <div class="container">
+          <div class="logo">
+              <a href="#" title="Logo">
+                  <img style="width: 30%; height: auto;" src="images/spirit.png" alt="Restaurant Logo"
+                      class="img-responsive">
+              </a>
+          </div>
+          <div class="menu text-right">
+              <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="home.html#team">Contact</a></li>
+                  <li style="display: none" id="username"><a href="#" id="usernameText"></a></li>
+                  <li style="display: none" onclick="check(2)" id="logoutButton"><a href="#" id="logoutText"></a></li>
+              </ul>
+          </div>
+          <div class="clearfix"></div>
+      </div>
+  </section>
+
+    <section class="main-no-wallet" style="display: none">
+      <div class="b1">
+        <div class="b1c1">
+          <h1>No wallet found</h1>
+        </div> 
+        <div class="b1c2">
+          <a>Create a wallet and start investing instantly</a>
+        </div>
+        <div class="b1c3">
+          <button onclick="enterApp()">Create wallet ✔</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-yes-wallet" style="display: block">
+      <div class="order-board">
+        <ul class="order-list" id="order-list">
+          <li class="header">
+            <div class="title">Suggested order</div>
+          </li>
+          <li class="li-order" id="id-sample-buy" style="display: none;">
+            <div class="what-why">
+              <div class="buy-tag">Buy</div>
+              <div>
+                <a class="order-header">Price</a>
+                <p class="order-content" id="id-price">$17.08</p>
+              </div>
+              <div>
+                <a class="order-header">Amount</a>
+                <p class="order-content" id="id-amount">176</p>
+              </div>
+              <div>
+                <a class="order-header">Value</a>
+                <p class="order-content" id="id-value">$3006.08</p>
+              </div>
+              <div>
+                <a class="order-header">Date</a>
+                <p class="order-content" id="id-date">17/08/2003</p>
+              </div>
+            </div>
+          </li>
+          <li class="sell-order" id="id-sample-sell" style="display: none;">
+            <div class="what-why">
+              <div class="sell-tag">Sell</div>
+              <div>
+                <a class="order-header">Price</a>
+                <p class="order-content" id="id-price">$17.08</p>
+              </div>
+              <div>
+                <a class="order-header">Amount</a>
+                <p class="order-content" id="id-amount">176</p>
+              </div>
+              <div>
+                <a class="order-header">Value</a>
+                <p class="order-content" id="id-value">$3006.08</p>
+              </div>
+              <div>
+                <a class="order-header">Date</a>
+                <p class="order-content" id="id-date">17/08/2003</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

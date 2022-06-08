@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@200&family=Oswald&display=swap');
+
+
+body {
+  background-image: linear-gradient(180deg, #f1d6ff 0%, #d5e4ff 100%, white, white, white 100%);
+  /* background-image: url('../images/wpp.jpeg'); */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+}
+
+/* CSS for All */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+.img-responsive {
+  width: 100%;
+}
+.img-curve {
+  border-radius: 15px;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-white {
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+/* a {
+  color: #ff6b81;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff4757;
+} */
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: #ff6b81;
+  color: white;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #ff4757;
+}
+h2 {
+  color: #2f3542;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+h3 {
+  font-size: 1.5rem;
+}
+.float-container {
+  position: relative;
+}
+.float-text {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+fieldset {
+  border: 1px solid white;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+/* CSSS for navbar section */
+
+.logo {
+  width: 10%;
+  float: left;
+}
+.menu {
+  /* line-height: 30px; */
+}
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 5px;
+  font-size: 14px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* CSS for Food SEarch Section */
+
+.food-search {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 7% 0;
+}
+
+.food-search input[type="search"] {
+  width: 50%;
+  padding: 1%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.categories {
+  padding: 4% 0;
+}
+
+.box-3 {
+  width: 28%;
+  float: left;
+  margin: 2%;
+}
+
+/* CSS for Social */
+
+.social {
+  margin-top: 200px;
+}
+
+.social ul {
+  list-style-type: none;
+}
+.social ul li {
+  display: inline;
+  padding: 1%;
+}
+
+/* for Order Section */
+.order {
+  width: 50%;
+  margin: 0 auto;
+}
+.input-responsive {
+  width: 96%;
+  padding: 1%;
+  margin-bottom: 3%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.order-label {
+  margin-bottom: 1%;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  margin-top: 300px;
+}
+
+.main .b1 .b1c1 {
+  margin: 8px auto 0px;
+  font-size: 36px;
+  line-height: 64px;
+  font-family: "Oswald", sans-serif;
+  max-width: 640px;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    45deg,
+    #7d5dc6,
+    #b06bc0,
+    #e76b80,
+    #ca8887,
+    #bca3eb,
+    #7fd989 90%
+  );
+  -webkit-text-fill-color: transparent;
+}
+
+.main .b1 .b1c2 {
+  margin: 8px auto 0px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "PT Sans", sans-serif;
+  max-width: 640px;
+  color: black;
+}
+
+.main .buttons ::after {
+  background-image: url("images/hero.png");
+  width: 100px;
+}
+
+.main .b1 .b1c3 button {
+  border-radius: 5px;
+  min-width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: white;
+  background-image: linear-gradient(
+    45deg,
+    rgba(20, 0, 255, 0.6),
+    rgba(1, 213, 255, 0.6) 100%
+  );
+  margin-top: 30px;
+  border: none;
+}
+
+.main .b1 .b1c3 button:hover {
+  background-image: linear-gradient(
+    135deg,
+    rgba(110, 177, 255, 0.8) 0%,
+    rgba(118, 0, 255, 1) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar .container .menu ul li a {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 400px;
+  text-align: center;
+  align-items: center;
+}
+
+.team .members .team-white {
+  background-color: white;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  margin: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+}
+
+.team .members .team-white .team-member .team-pic img {
+  size: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  margin: 10px;
+}
+
+.team-info b {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team-info label {
+  font-size: 14px;
+}
+
+.team .team-white:hover {
+  background-color: white;
+  box-shadow: #2f3542;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.team .label {
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+}

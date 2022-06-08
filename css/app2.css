@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@200&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@200;700&family=Oswald&display=swap");
+
+body {
+  background: linear-gradient(
+    0deg,
+    rgb(248, 226, 160) 10%,
+    rgb(247, 205, 167) 21.67%,
+    rgb(247, 207, 166) 39.41%,
+    rgb(246, 192, 171) 53.69%,
+    rgb(245, 178, 175) 100%
+  );
+  background-size: cover;
+}
+
+/* CSS for All */
+* {
+  margin: 0 0;
+  padding: 0 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+}
+.img-responsive {
+  width: 100%;
+}
+.img-curve {
+  border-radius: 15px;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-white {
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+/* a {
+  color: #ff6b81;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff4757;
+} */
+
+.btn {
+  padding: 1%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: #ff6b81;
+  color: white;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #ff4757;
+}
+h2 {
+  color: #2f3542;
+  font-size: 2rem;
+  margin-bottom: 2%;
+}
+h3 {
+  font-size: 1.5rem;
+}
+.float-container {
+  position: relative;
+}
+.float-text {
+  position: absolute;
+  bottom: 50px;
+  left: 40%;
+}
+fieldset {
+  border: 1px solid white;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+/* CSSS for navbar section */
+
+.logo {
+  width: 10%;
+  float: left;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline;
+  padding: 5px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu ul li:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-no-wallet {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  margin-top: 300px;
+  margin-bottom: 100%;
+}
+
+.main-no-wallet .b1 .b1c1 {
+  margin: 8px auto 0px;
+  font-size: 36px;
+  line-height: 64px;
+  font-family: "Oswald", sans-serif;
+  max-width: 640px;
+  -webkit-background-clip: text;
+  background-color: black;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-no-wallet .b1 .b1c2 {
+  margin: 8px auto 0px;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "PT Sans", sans-serif;
+  max-width: 640px;
+  color: black;
+}
+
+.main-no-wallet .buttons ::after {
+  background-image: url("images/hero.png");
+  width: 100px;
+}
+
+.main-no-wallet .b1 .b1c3 button {
+  border-radius: 5px;
+  min-width: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: white;
+  background-image: linear-gradient(
+    45deg,
+    rgba(20, 0, 255, 0.6),
+    rgba(1, 213, 255, 0.6) 100%
+  );
+  margin-top: 30px;
+  border: none;
+}
+
+.main-no-wallet .b1 .b1c3 button:hover {
+  background-image: linear-gradient(
+    135deg,
+    rgba(110, 177, 255, 0.8) 0%,
+    rgba(118, 0, 255, 1) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar .container .menu ul li a {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100px; */
+  height: 100%;
+  position: absolute;
+}
+
+.dashboard .board {
+  background-color: white;
+  padding: 10px;
+  /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px; */
+  border-radius: 20px;
+  margin-left: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  width: 195px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dashboard .board div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard .board div a {
+  font-weight: bold;
+}
+
+.main-yes-wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100%;
+  margin-left: 300px;
+  margin-right: 100px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.main-yes-wallet .order-board ul {
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  max-height: 800px;
+}
+
+.main-yes-wallet .order-board ul .header {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.main-yes-wallet .order-board ul .li-order div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.main-yes-wallet .order-board ul .li-order div div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.order-header {
+  color: #7b7878;
+  font-size: 12px;
+}
+
+.order-content {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.buy-tag {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.sell-tag {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: lighter;
+}

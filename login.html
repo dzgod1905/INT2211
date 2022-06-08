@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Important to make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricon</title>
+
+  <!-- Link our CSS file -->
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/login.js"></script>
+<script>
+  has_login(4);
+</script>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img
+            src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg"
+            alt="" /></div>
+        <div class="formBx">
+          <form id="submit-login">
+            <h2>Sign In</h2>
+            <input type="text" name="username" placeholder="Username" id="input-username" />
+            <input type="password" name="password" placeholder="Password" id="input-password" />
+            <a class="alert" id="authentication-failed" style="display: none; color: red; font-size: 12px;">Authentication
+              failed, please try again</a>
+            <input type="submit" name="" value="Login" />
+            <p class="signup">
+              Don't have an account ?
+              <a href="#" onclick="toggleForm();">Sign Up.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form id="submit-register">
+            <h2>Create an account</h2>
+            <input type="text" name="name" placeholder="Your name" id="input-name-register" />
+            <input type="text" name="username" placeholder="Username" id="input-username-register" />
+            <input type="password" name="password" placeholder="Password" id="input-password-register" />
+            <input type="password" name="cpassword" placeholder="Confirm password" id="input-cpassword-register" />
+            <input type="text" name="money" placeholder="Your money" id="input-money-register" />
+            <a class="alert" id="cpassword-failed" style="display: none; color: red; font-size: 12px;">Password does not match</a>
+            <a class="alert" id="username-duplicate" style="display: none; color: red; font-size: 12px;">Username already exists</a>
+            <a class="alert" id="password-short" style="display: none; color: red; font-size: 12px;">Password must be at least 6 characters</a>
+            <input type="submit" name="" value="Sign Up" />
+            <p class="signup">
+              Already have an account ?
+              <a href="#" onclick="toggleForm();">Sign in.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img
+            src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg"
+            alt="" /></div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="js/login.js"></script>

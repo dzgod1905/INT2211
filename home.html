@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricon</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+
+<script src="js/home.js"></script>
+<script src="js/login.js"></script>
+
+<script>
+    check(1);
+</script>
+
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img style="width: 30%; height: auto;" src="images/spirit.png" alt="Restaurant Logo"
+                        class="img-responsive">
+                </a>
+            </div>
+            <div class="menu text-right">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#team">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="loginButton" style="display: inline-block"><a href="login.html">Login</a></li>
+                    <li style="display: none" id="username"><a href="#" id="usernameText"></a></li>
+                    <li style="display: none" onclick="check(2)" id="logoutButton"><a href="#" id="logoutText"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="b1">
+            <div class="b1c1">
+                <h1>A Light-weight <br> Automated, Crypto Investing Bot</h1>
+            </div>
+            <div class="b1c2"><a>Ricon is an automated investing protocol</a></div>
+            <div class="b1c3">
+                <button onclick="check(3)">Enter app ✔ </button>
+            </div>
+        </div>
+
+    </section>
+    <section class="team" id="team">
+        <div class="label">Meet the team</div>
+        <div class="members">
+            <div class="team-white" style="display: none;">
+                <div class="team-member">
+                    <div class="team-pic">
+                        <img src="images/hero.png">
+                    </div>
+                    <div class="team-info">
+                        <p><b>Nguyễn Hải Bình</b></p>
+                        <p><label>20020003</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-white" style="display: none;">
+                <div class="team-member">
+                    <div class="team-pic">
+                        <img src="images/hero.png">
+                    </div>
+                    <div class="team-info">
+                        <p><b>Đào Quang Thái Dương</b></p>
+                        <p><label>20020006</label></p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-white">
+                <div class="team-member">
+                    <div class="team-pic">
+                        <img src="images/hero.png">
+                    </div>
+                    <div class="team-info">
+                        <b>Nguyễn Ngọc Vũ</b>
+                        <label>21020038</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tu19052003"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/cristiano/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Cristiano"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" /></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
